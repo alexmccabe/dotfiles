@@ -12,13 +12,13 @@ export HISTCONTROL=ignoredups
 PROMPT_COMMAND=echo
 
 # Add bash aliases.
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
+if [ -f ~/.bash/.bash_aliases ]; then
+    source ~/.bash/.bash_aliases
 fi
 
 # Add bash functions.
-if [ -f ~/.bash_functions ]; then
-    source ~/.bash_functions
+if [ -f ~/.bash/.bash_functions ]; then
+    source ~/.bash/.bash_functions
 fi
 
 export NVM_DIR="$HOME/.nvm"
