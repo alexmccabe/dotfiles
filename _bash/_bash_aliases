@@ -1,0 +1,58 @@
+alias kerve='cd ~/Sites/Kerve && ls'
+alias projects='cd ~/Sites/dev && ls'
+
+# alias composerInstall='curl -sS https://getcomposer.org/installer | php'
+# alias composer='php /usr/local/bin/composer'
+# alias phpserve='php -S localhost:8000'
+
+alias ngrok='/usr/local/bin/ngrok'
+
+
+# Reload bash_profile without having to create a new window
+alias reload_profile='. ~/.bash_profile'
+
+# Add some easy shortcuts for formatted directory listings and add a touch of color.
+alias ll='ls -lFG'
+alias la='ls -alFG'
+alias ls='ls -FG'
+
+# Git aliases that aren't in scm_breeze
+alias gdt='git difftool'
+alias gdtc='git difftool --cached'
+alias gmt='git mergetool'
+
+# Make some possibly destructive commands more interactive.
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
+# Laravel aliases
+
+# artisan
+alias artisan='php artisan'
+alias migrate='artisan migrate'
+alias dump='composer dump-autoload'
+
+# Generators Package
+alias g:c='artisan make:controller'
+alias g:m='artisan make:model'
+alias g:v='artisan make:view'
+alias g:mig='artisan make:migration'
+alias g:t='artisan make:test'
+alias g:r='artisan make:resource'
+alias g:s='artisan make:scaffold'
+alias g:f='artisan make:form'
+
+# PHP Unit
+alias phpunit='vendor/bin/phpunit'
+
+
+# Docker aliases
+
+# docker-compose
+alias dc='docker-compose'
+
+## Kerve Project Management
+alias pmtup='cd ~/Sites/Kerve/laradock/docker; docker-compose up -d nginx mysql phpmyadmin workspace'
+alias pmtbash='cd ~/Sites/Kerve/laradock/docker; docker-compose exec workspace bash'
+alias pmtdown='cd ~/Sites/Kerve/laradock/docker; docker-compose down'

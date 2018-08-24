@@ -1,0 +1,47 @@
+# Load .profile in emulate mode. Though not necessary, as profile just
+# includes the export and basic variable setting.
+# https://superuser.com/a/398990
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/alexmccabe/.oh-my-zsh"
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="bullet-train"
+
+BULLETTRAIN_DIR_FG=black
+BULLETTRAIN_PROMPT_ORDER=(
+  time
+  status
+  git
+  context
+  dir
+)
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-256color
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
+
+# User configuration
+source ~/.bash/.bash_aliases
+source ~/.zsh/.zsh_aliases
+
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+
+# Enable git completion features
+# if [ -f ~/.git-completion.zsh ]; then
+#   source ~/git-completion.bash
+#   # source ~/.git-completion.zsh
+# fi

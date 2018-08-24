@@ -1,0 +1,4 @@
+PATH=$PATH:/usr/local/bin:$PATH
+PATH=$PATH:$HOME/.bin:$PATH
+
+export PATH;

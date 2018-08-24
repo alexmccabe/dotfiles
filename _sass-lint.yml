@@ -1,0 +1,31 @@
+files:
+  include: '**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules/**/*.*'
+options:
+  formatter: stylish
+  merge-default-rules: true
+rules:
+  class-name-format:
+    - 1
+    - convention: hyphenatedbem
+  force-pseudo-nesting: 0
+  id-name-format:
+    - 1
+    - convention: hyphenatedbem
+  indentation:
+    - 1
+    - size: 4
+  leading-zero:
+    - 2
+    -
+      include: true
+  no-color-literals:
+      - 1
+      -
+        allow-map-identifiers: true
+  # allow-map-identifiers: 1
+  no-css-comments: 0
+  placeholder-name-format:
+    - 1
+    - convention: hyphenatedbem

@@ -1,0 +1,24 @@
+# Public: Stop a mongodb instance started by mongod.
+#
+# Stop a mongodb instance started by the mongod command, if one exists.
+function stop_mongo {
+    if pgrep mongo > /dev/null
+    then
+        echo 'Killing mongo process'
+        kill -2 `pgrep mongo`
+        echo 'Mongo process killed'
+    else
+        echo "No mongo process found"
+    fi
+}
+
+
+# Public: PHP Artisan Generate full model, route, controller and migration
+function g:mf {
+    g:m "$1" -mcr
+}
+
+
+function change_shell {
+    chsh -s $(which "$1")
+}

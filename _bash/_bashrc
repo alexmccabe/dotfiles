@@ -1,0 +1,32 @@
+# Enable git completion features
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+
+# Avoid succesive duplicates in the bash command history.
+export HISTCONTROL=ignoredups
+
+# Add a new line after each command
+PROMPT_COMMAND=echo
+
+# Add bash aliases.
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+
+# Add bash functions.
+if [ -f ~/.bash_functions ]; then
+    source ~/.bash_functions
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Set current present working directory
+# if [ $ITERM_SESSION_ID ]; then
+#     export PROMPT_COMMAND='echo -ne "\033]0;$PWD\007"'
+# fi
+
