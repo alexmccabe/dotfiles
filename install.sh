@@ -1,29 +1,11 @@
 # !/bin/bash
+# adapted from https://github.com/skeeto/dotfiles/blob/master/install.sh
 
 if [ -d ~/.scm_breeze ]; then
     echo 'SCM_BREEZE is already installed, skipping'
 else
     git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
 fi
-# adapted from https://github.com/skeeto/dotfiles/blob/master/install.sh
-
-## Install each _-prefixed file or dir
-# find . -type f -name "_*" -print0 | sort -z | while read -d $'\0' file
-# do
-#     dotfile=${file/.\/_/.}
-
-#     ## Install directory first
-#     if [ ! -e $(dirname ~/$dotfile) ]; then
-#     	echo "create directory: "
-#     	echo $(dirname ~/$dotfile)
-#         mkdir -p -m 700  $(dirname ~/$dotfile)
-#     fi
-
-#     ## Create a link to the repository version
-#     echo Installing $dotfile
-#     ln -fs $(pwd)/$file ~/$dotfile
-#     chmod go-rwx $file
-# done
 
 split() {
     path="$1"
