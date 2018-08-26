@@ -1,4 +1,2 @@
 # Reload bash_profile without having to create a new window
 alias reload_profile='. ~/.zshrc'
-
-echo 'test'
