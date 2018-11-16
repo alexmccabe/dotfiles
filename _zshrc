@@ -45,3 +45,6 @@ source ~/.zsh/.zsh_aliases
 #   source ~/git-completion.bash
 #   # source ~/.git-completion.zsh
 # fi
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/alexmccabe/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
