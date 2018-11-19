@@ -1,4 +1,4 @@
-alias kerve='cd ~/Sites/Kerve && ls'
+alias huggg='cd ~/Sites/huggg && ls'
 alias projects='cd ~/Sites/dev && ls'
 
 # alias composerInstall='curl -sS https://getcomposer.org/installer | php'
