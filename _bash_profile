@@ -5,3 +5,5 @@ source ~/.profile
 
 # Load .bashrc, containing non-login related bash initializations.
 source ~/.bash/.bashrc
+
+[ -s "/Users/alexmccabe/.scm_breeze/scm_breeze.sh" ] && source "/Users/alexmccabe/.scm_breeze/scm_breeze.sh"

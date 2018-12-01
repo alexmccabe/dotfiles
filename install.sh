@@ -4,7 +4,7 @@
 if [ -d ~/.scm_breeze ]; then
     echo 'SCM_BREEZE is already installed, skipping'
 else
-    git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+    git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze && ~/.scm_breeze/install.sh
 fi
 
 split() {
