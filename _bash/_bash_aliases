@@ -20,6 +20,8 @@ alias ls='ls -FG'
 alias gdt='git difftool'
 alias gdtc='git difftool --cached'
 alias gmt='git mergetool'
+alias delete_merged="git branch --merged | egrep -v '(^\*|master|develop|development)' | xargs git branch -d"
+alias gdm="delete_merged"
 
 # Make some possibly destructive commands more interactive.
 alias rm='rm -i'

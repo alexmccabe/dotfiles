@@ -5,7 +5,7 @@
     name = Alex McCabe
     email = alexwmccabe@gmail.com
 [commit]
-    # template = /Users/alexmccabe/.git-commit-template
+	template = /Users/alexmccabe/.git-commit-template
 [mergetool "Kaleidoscope"]
     cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
     trustexitcode = true

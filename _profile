@@ -1,7 +1,14 @@
-PATH=$PATH:/usr/local/bin:$PATH
-PATH=$PATH:$HOME/.bin:$PATH
+PATH=$HOME/.rbenv/shims:$PATH
+PATH=/usr/local/bin:$PATH
+PATH=$PATH:$HOME/.bin
 PATH=$PATH:/usr/local/mysql/bin
 PATH=$PATH:/Users/alexmccabe/Library/Android/platform-tools
 
-export ANDROID_SDK=/Users/alexmccabe/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
+PATH=$PATH:$ANDROID_HOME/emulator
+PATH=$PATH:$ANDROID_HOME/tools
+PATH=$PATH:$ANDROID_HOME/tools/bin
+PATH=$PATH:$ANDROID_HOME/platform-tools
+
 export PATH;
