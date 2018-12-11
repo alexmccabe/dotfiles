@@ -38,6 +38,11 @@ source $ZSH/oh-my-zsh.sh
 source ~/.bash/.bash_aliases
 source ~/.zsh/.zsh_aliases
 
+# Add bash functions.
+if [ -f ~/.bash/.bash_functions ]; then
+  source ~/.bash/.bash_functions
+fi
+
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # Enable git completion features
