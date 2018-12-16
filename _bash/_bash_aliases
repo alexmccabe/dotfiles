@@ -1,5 +1,5 @@
 alias huggg='cd ~/Sites/huggg && ls'
-alias projects='cd ~/Sites/dev && ls'
+alias personal='cd ~/Sites/personal && ls'
 
 # alias composerInstall='curl -sS https://getcomposer.org/installer | php'
 # alias composer='php /usr/local/bin/composer'
