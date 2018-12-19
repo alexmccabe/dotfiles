@@ -7,6 +7,11 @@ else
     git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze && ~/.scm_breeze/install.sh
 fi
 
+if ! [ -d ~/ngrok ]; then
+    echo 'Copying ngrok to "~/"'
+    cp ./ngrok ~/
+fi
+
 split() {
     path="$1"
     output=""

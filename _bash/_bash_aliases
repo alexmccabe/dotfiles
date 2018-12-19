@@ -5,7 +5,7 @@ alias personal='cd ~/Sites/personal && ls'
 # alias composer='php /usr/local/bin/composer'
 # alias phpserve='php -S localhost:8000'
 
-alias ngrok='/usr/local/bin/ngrok'
+alias ngrok='~/ngrok'
 
 
 # Reload bash_profile without having to create a new window
