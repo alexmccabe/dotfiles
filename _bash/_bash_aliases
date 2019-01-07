@@ -1,5 +1,11 @@
+
+# Personal
 alias huggg='cd ~/Sites/huggg && ls'
 alias personal='cd ~/Sites/personal && ls'
+alias hbs='cd ~/Sites/huggg/bar-staff'
+alias hbm='cd ~/Sites/huggg/bloody-mary'
+alias hrr='cd ~/Sites/huggg/rob-roy'
+alias hss='cd ~/Sites/huggg/simple-syrup'
 
 # alias composerInstall='curl -sS https://getcomposer.org/installer | php'
 # alias composer='php /usr/local/bin/composer'
