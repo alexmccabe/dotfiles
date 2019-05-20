@@ -54,3 +54,5 @@ fi
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/alexmccabe/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 [ -s "/Users/alexmccabe/.scm_breeze/scm_breeze.sh" ] && source "/Users/alexmccabe/.scm_breeze/scm_breeze.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
