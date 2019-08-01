@@ -12,12 +12,15 @@ export ZSH="/Users/alexmccabe/.oh-my-zsh"
 ZSH_THEME="bullet-train"
 
 BULLETTRAIN_DIR_FG=black
+BULLETTRAIN_NVM_FG=black
+BULLETTRAIN_PROMPT_CHAR=\>
 BULLETTRAIN_PROMPT_ORDER=(
   time
   status
-  git
-  context
+  # context
+  nvm
   dir
+  git
 )
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -60,3 +63,7 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/alexmccabe/Library/Caches/heroku/autocomplete/zs
 [ -s "/Users/alexmccabe/.scm_breeze/scm_breeze.sh" ] && source "/Users/alexmccabe/.scm_breeze/scm_breeze.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
