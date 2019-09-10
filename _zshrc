@@ -29,7 +29,11 @@ BULLETTRAIN_PROMPT_ORDER=(
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  node
+  npm
+  yarn
   zsh-autosuggestions
+  zsh-syntax-highlighting
   zsh-256color
 )
 
@@ -41,6 +45,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.bash/.bash_aliases
 source ~/.zsh/.zsh_aliases
 
+
+
 # Path autocomplete
 zstyle ':completion:*' matcher-list '' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
@@ -51,6 +57,7 @@ if [ -f ~/.bash/.bash_functions ]; then
 fi
 
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+[ -s "$HOME/.zsh/.iterm2_shell_integration.zsh" ] && source "$HOME/.zsh/.iterm2_shell_integration.zsh"
 
 # Enable git completion features
 # if [ -f ~/.git-completion.zsh ]; then
@@ -60,10 +67,18 @@ fi
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/alexmccabe/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
-[ -s "/Users/alexmccabe/.scm_breeze/scm_breeze.sh" ] && source "/Users/alexmccabe/.scm_breeze/scm_breeze.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+iterm2_print_user_vars() {
+  # extend this to add whatever
+  # you want to have printed out in the status bar
+  iterm2_set_user_var nodeVersion $(node -v)
+  iterm2_set_user_var nvmVersion $(nvm current)
+  iterm2_set_user_var pwd $(pwd)
+}
