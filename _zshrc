@@ -13,13 +13,16 @@ ZSH_THEME="bullet-train"
 
 BULLETTRAIN_DIR_FG=black
 BULLETTRAIN_NVM_FG=black
+BULLETTRAIN_TIME_BG=green
+BULLETTRAIN_TIME_FG=black
+BULLETTRAIN_GIT_BG=white
 BULLETTRAIN_PROMPT_CHAR=\>
 BULLETTRAIN_PROMPT_ORDER=(
   time
   status
   # context
-  nvm
-  dir
+  # nvm
+  # dir
   git
 )
 
