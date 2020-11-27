@@ -4,7 +4,7 @@
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/alexmccabe/.oh-my-zsh"
+export ZSH="/Users/alex/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -12,7 +12,7 @@ export ZSH="/Users/alexmccabe/.oh-my-zsh"
 ZSH_THEME="bullet-train"
 
 BULLETTRAIN_DIR_FG=black
-BULLETTRAIN_NVM_FG=black
+# BULLETTRAIN_NVM_FG=black
 BULLETTRAIN_TIME_BG=green
 BULLETTRAIN_TIME_FG=black
 BULLETTRAIN_GIT_BG=white
@@ -59,7 +59,6 @@ if [ -f ~/.bash/.bash_functions ]; then
   source ~/.bash/.bash_functions
 fi
 
-[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 [ -s "$HOME/.zsh/.iterm2_shell_integration.zsh" ] && source "$HOME/.zsh/.iterm2_shell_integration.zsh"
 
 # Enable git completion features
@@ -69,7 +68,7 @@ fi
 # fi
 
 # heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/alexmccabe/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+# HEROKU_AC_ZSH_SETUP_PATH=/Users/alexmccabe/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -82,6 +81,8 @@ iterm2_print_user_vars() {
   # extend this to add whatever
   # you want to have printed out in the status bar
   iterm2_set_user_var nodeVersion $(node -v)
-  iterm2_set_user_var nvmVersion $(nvm current)
+  # iterm2_set_user_var nvmVersion $(nvm current)
   iterm2_set_user_var pwd $(pwd)
 }
+
+[ -s "/Users/alex/.scm_breeze/scm_breeze.sh" ] && source "/Users/alex/.scm_breeze/scm_breeze.sh"

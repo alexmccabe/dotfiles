@@ -27,7 +27,10 @@ alias gdt='git difftool'
 alias gdtc='git difftool --cached'
 alias gmt='git mergetool'
 alias delete_merged="git branch --merged | egrep -v '(^\*|master|develop|development)' | xargs git branch -d"
+# alias delete_squashed="git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch\^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done
+# "
 alias gdm="delete_merged"
+# alias gdsm="delete_squashed"
 
 # Make some possibly destructive commands more interactive.
 alias rm='rm -i'

@@ -1,11 +1,11 @@
 [core]
     editor = code --new-window --wait
-    excludesfile = /Users/alexmccabe/.gitignore_global
+    excludesfile = /Users/alex/.gitignore_global
 [user]
     name = Alex McCabe
     email = alexwmccabe@gmail.com
 [commit]
-	template = /Users/alexmccabe/.git-commit-template
+	template = /Users/alex/.git-commit-template
 [mergetool "Kaleidoscope"]
     cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
     trustexitcode = true
@@ -25,7 +25,7 @@
     cmd = code --wait --diff $LOCAL $REMOTE
 
 [filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

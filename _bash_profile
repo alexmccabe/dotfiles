@@ -6,6 +6,4 @@ source ~/.profile
 # Load .bashrc, containing non-login related bash initializations.
 source ~/.bash/.bashrc
 
-[ -s "/Users/alexmccabe/.scm_breeze/scm_breeze.sh" ] && source "/Users/alexmccabe/.scm_breeze/scm_breeze.sh"
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
